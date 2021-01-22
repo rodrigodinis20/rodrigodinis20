@@ -1,0 +1,16 @@
+Repeat until sorted:
+    Extract one element from array
+    Insert element into sorted subarray (empty for the first element)
+
+Example:
+
+9 2 3 10 6 7 14 4
+
+1. 9
+2. 2 9
+3. 2 3 9
+4. 2 3 9 10
+5. 2 3 6 9 10
+6. 2 3 6 7 9 10
+7. 2 3 6 7 9 10 14
+8. 2 3 4 6 7 9 10 14

@@ -1,0 +1,29 @@
+-Build Maze:
+------------
+-
+-Mark maze start as visited;
+-Push start onto the stack;
+-while stack is not empty do Pop current cell off stack;
+-    if current cell has unvisited neighbors then Choose a random unvisited neighbor;
+-        Remove wall with neighbor; Mark neighbor as visited;
+-        Push current cell back on stack; Push neighbor on stack;
+-    end
+-end
+-
+-Solve Maze:
+------------
+-
+-Set maze start as the current cell;
+-Push current cell on the stack;
+-while The current cell is not the maze end do
+-    Set the current cell by peaking on the stack;
+-    Mark the current cell visited;
+-    if the current cell has unvisited and reachable neighbors then
+-        Consistently choose an unvisited a neighbor;
+-        Push the neighbor onto the stack;
+-    else
+-        Pop the current cell from the stack;
+-        end
+-end
+-return The path that reached the exit, which is now on the stack
+-

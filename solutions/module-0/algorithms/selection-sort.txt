@@ -1,0 +1,14 @@
+Find the smallest number. Swap it with the first number.
+Find the second-smallest number. Swap it with the second number.
+Repeat finding the next-smallest number, and swapping it into the correct position until the array is sorted.
+
+Example:
+
+1. 9 2 3 10 6 7 14 4
+2. 2 9 3 10 6 7 14 4
+3. 2 3 9 10 6 7 14 4
+4. 2 3 4 10 6 7 14 9
+5. 2 3 4 6 10 7 14 9
+6. 2 3 4 6 7 10 14 9
+7. 2 3 4 6 7 9 14 10
+8. 2 3 4 6 7 9 10 14

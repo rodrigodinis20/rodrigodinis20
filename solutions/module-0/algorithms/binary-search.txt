@@ -1,0 +1,7 @@
+repeat until number searched is found
+    middle number = floor((lower + higher) / 2)
+    if middle number > number searched
+        higher = middle number - 1
+    else if middle number < number searched
+        lower = middle number + 1
+    else return position

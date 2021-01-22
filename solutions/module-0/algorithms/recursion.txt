@@ -1,0 +1,85 @@
+Factorial recursive function
+
+function f(n) {
+
+    if (n === 0) {
+        return 1;
+    }
+
+    return n * f(n-1);
+
+}
+
+
+Stack:
+
+- Push argument into stack when calling function
+- Pop argument from stack when using function execution result
+- Pop argument and push result into stack when exiting function
+
+3 - entering f(3)
+3 2 - entering f(2)
+3 2 1 - entering f(1)
+3 2 1 0 - entering (f0)
+3 2 1 1 - leaving f(0)
+3 2 1 - leaving f(1)
+3 2 - leaving f(2)
+6 - leaving f(3)
+
+Iterative palindrome detection - Pseudo-code
+
+set begin to 0
+set end to text length - 1
+if length <= 1 is palindrome
+while begin < end
+    if char at begin is different from char at end, not a palindrome
+    end = end - 1
+    begin = begin + 1
+done
+String is a palindrome
+
+Iterative palindrome detection in JavaScript
+
+function palindrome(str){
+
+    var end = str.length - 1;
+    var begin =0;
+    var result = true;
+
+    if (str.length <= 1) return true;
+
+    while(begin < end){
+
+        if (str.charAt(begin) != str.charAt(end)){
+            result = false;
+            break;
+        }
+        begin++;
+        end--;
+    }
+    return result;
+}
+
+Recursive palindrome detection
+
+set begin to 0
+set end to text length - 1
+if length <= 1 is palindrome
+if char at begin is different from char at end, not a palindrome
+Check if string from begin + 1 till end - 1  is palindrome
+
+Recursive palindrome detection in JavaScript
+
+function palindrome(str){
+
+    var end = str.length - 1;
+
+    if (str.length <= 1) return true;
+
+    if (str.charAt(0) != str.charAt(end)){
+        return false;
+    }
+
+    return palindrome(str.substr(1,str.length - 2));
+
+}

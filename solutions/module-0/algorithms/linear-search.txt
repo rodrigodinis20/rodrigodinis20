@@ -1,0 +1,3 @@
+for all numbers in list do
+    if number is equal to number being searched, return position
+    else continue checking
