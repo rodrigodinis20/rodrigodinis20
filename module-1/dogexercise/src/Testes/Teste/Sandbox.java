@@ -1,4 +1,6 @@
-package Testes;
+package Testes.Teste;
+
+import Testes.Teste.DrinkType;
 
 public class Sandbox {
 

@@ -1,21 +1,28 @@
 package RockPaperScissor;
 
 public enum HandType {
-    ROCK,
-    PAPER,
-    SCISSOR;
+    ROCK(HandType.SCISSOR, HandType.PAPER),
+    PAPER(HandType.ROCK, HandType.SCISSOR),
+    SCISSOR(HandType.PAPER, HandType.ROCK);
 
-    /*private int value;
+    private HandType weakness;
+    private HandType strength;
 
-    HandType(int temperature){
+    HandType(HandType weakness, HandType strength) {
 
-        this.value = temperature;
+        this.weakness = weakness;
+        this.strength = strength;
     }
 
-    public int getValue(){
+    public HandType getWeakness() {
 
-        return value;
-    }*/
+        return weakness;
+    }
+
+    public HandType getStrength() {
+
+        return strength;
+    }
 }
 
 
