@@ -3,7 +3,7 @@ public class RealWorld {
     public static void main(String[] args){
 
 
-        Bank bank1 = new Bank( 500);
+        Bank bank1 = new Bank(500);
         Bank bank2 = new Bank(300);
 
         People p1 = new People("Alberto", bank1, 500);
@@ -17,7 +17,7 @@ public class RealWorld {
          */
 
         p1.pay(200);
-        System.out.println(p1.checkBalance());
-        System.out.println(p2.checkBalance());
+        p1.checkBalance();
+        p2.checkBalance();
     }
 }

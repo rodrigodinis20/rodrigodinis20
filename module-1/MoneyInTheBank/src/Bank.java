@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Bank {
 
 
@@ -10,18 +12,14 @@ public class Bank {
     }
 
 
-        /*public int getBalance() {
-            return this.balance;
-        }
-
-         */
-
         public void receive(int amount){
             this.balance = this.balance + amount;
+            System.out.println("Your new balance is: " + this.balance);
         }
 
         public void pay(int amount){
             this.balance = this.balance - amount;
+            System.out.println("Your new balance is: " + this.balance);
         }
 
         public int checkBalance(){

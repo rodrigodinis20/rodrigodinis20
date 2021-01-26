@@ -32,14 +32,16 @@ public class People {
 
     public void receive(int amount){
         this.balance = this.balance + amount;
+        System.out.println("Your new balance is: " + this.balance);
     }
 
     public void pay(int amount){
         this.balance = this.balance - amount;
+        System.out.println("Your new balance is: " + this.balance);
     }
 
-    public int checkBalance(){
-        return this.balance;
+    public void checkBalance(){
+        System.out.println("Your current balance is: " + this.balance);
     }
 
     /*public void setBalance(int balance) {
