@@ -1,13 +1,26 @@
 import java.sql.SQLOutput;
 
 public class Hotel {
+    private String name;
     private Room[] rooms;
 
+    public Hotel(String name, int numRooms) {
+        this.name = name;
+        rooms = new Room[numRooms];
 
-    public Hotel(Room[] rooms) {
+        for(int i = 0; i < numRooms; i++){
+            rooms[i] = new Room();
+        }
+    }
+
+    /*public Hotel(Room[] rooms, String name) {
         this.rooms = rooms;
+        this.name = name;
+
 
     }
+
+     */
 
     public Room[] getRooms() {
         return this.rooms;
@@ -29,14 +42,14 @@ public class Hotel {
                 return i;
             }
             else {
-                System.out.println("There is no room");
+                System.out.println("There is no rooms.");
             }
         }
         return -1;
     }
 
     public void checkOut(int roomNumber) {
-        rooms[roomNumber].setAvailability(false);
+        rooms[roomNumber].setAvailability(true);
         System.out.println("Your check out is complete.");
 
     }
