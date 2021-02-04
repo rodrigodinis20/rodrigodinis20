@@ -4,11 +4,12 @@ public class Demon extends Genies{
     public boolean grantWish() {
 
         super.grantWish();
+        if (recycled == false)
         System.out.println("Your wish has been granted.");
 
-        if(recycled = true) {
+        if(recycled == true) {
             System.out.println("I have been recycled, you fool!");
-            return false;
+
         }
         return false;
     }
@@ -20,6 +21,10 @@ public class Demon extends Genies{
     }
 
     private boolean recycled = false;
+
+    public boolean getRecycled(){
+        return this.recycled;
+    }
 
     public void setRecycled() {
         this.recycled = recycled;

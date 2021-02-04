@@ -43,27 +43,30 @@ public class MagicLamp {
 
 
             if (rubs % 2 == 0) {
-                System.out.println("New friendly genie created.");
+                System.out.println("New friendly genie has been summoned.");
                 return new Friendly(5);
 
 
             }
-            System.out.println("New grumpy genie created.");
+            System.out.println("New grumpy genie has been summoned.");
             return new Grumpy(5);
             //return new Demon();
 
         }
-        System.out.println("New demon created.");
+        System.out.println("New recyclable demon has been summoned.");
         return new Demon(5);
     }
 
     public void recharge(Demon demon) {
         if (rubs == totalGenies) {
+
             demon.recyle();
             rubs =0;
             System.out.println("The demon has been recycled.");
             System.out.println("You can now rub the lamp " + getTotalGenies() + " more times!");
 
+
         }
+        System.out.println("I have already been recycled, leave me alone!");
     }
 }
