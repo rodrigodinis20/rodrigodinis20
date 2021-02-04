@@ -1,0 +1,14 @@
+Battle Arena
+
+Let's create a battle simulation game!
+
+Our game will have Fighters. Each fighter can hit or cast a spell on another fighter (cause damage). The amount of damage caused will depend on how much attack damage (for hits) or spell damage (for casts) the attacking fighter has.
+
+There are 3 specific types of fighters (Mages, Trolls and Gladiators), which attack and suffer damage in a different way:
+- When a mage casts a spell, he has a chance to create a shield for himself - which means the next time he gets attacked no damaged will be done.
+- When a gladiator hits there is a chance that double the damage is caused (critical).
+- Some of the time a troll is ordered to attack, it might not do anything (trolls, right??)
+
+Our game is going to be played by two players. Each player will have an array with his fighters (a mix of the three types).
+Players will take turns attacking each other. For a player to attack he should first choose a random alive Fighter from his array, and select a random alive Fighter from the opponent's array. After both Fighters have been chosen, the attacking fighter will randomly hit or cast a spell on the opponent's fighter.
+The game finishes when all of the fighters of one player have been killed.
