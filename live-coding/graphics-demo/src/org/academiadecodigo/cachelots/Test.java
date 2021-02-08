@@ -12,22 +12,22 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Test {
 
-    private static final int PADDING = 10;
+    public static final int PADDING = 10;
     public static final int CELL_SIZE = 100;
     private static final int BAR_WIDTH = 10 * CELL_SIZE;
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         Rectangle bar = new Rectangle(PADDING, PADDING, BAR_WIDTH, CELL_SIZE);
         bar.setColor(Color.LIGHT_GRAY);
         bar.fill();
 
-        Picture cache = new Picture(PADDING,PADDING,"resources/cache.png");
-        cache.draw();
+        Cachealot cachealot = new Cachealot();
+
 
         //implement KeyboardHandler
-       CachealotKeyboardHandler handler = new CachealotKeyboardHandler(cache);
+        CachealotKeyboardHandler handler = new CachealotKeyboardHandler(cachealot);
 
         //instanciate keyboard
         Keyboard keyboard = new Keyboard(handler);
@@ -41,16 +41,22 @@ public class Test {
         keyboard.addEventListener(e);
 
         //other way
-        keyboard.addEventListener(KeyboardEvent.KEY_LEFT,KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(KeyboardEvent.KEY_UP,KeyboardEventType.KEY_PRESSED);
-        keyboard.addEventListener(KeyboardEvent.KEY_DOWN,KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(KeyboardEvent.KEY_LEFT, KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(KeyboardEvent.KEY_UP, KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(KeyboardEvent.KEY_SPACE, KeyboardEventType.KEY_PRESSED);
 
         //Mouse
         CachealotMouseHandler mouseHandler = new CachealotMouseHandler();
-        Mouse remi = new Mouse( mouseHandler);
+        Mouse remi = new Mouse(mouseHandler);
 
         remi.addEventListener(MouseEventType.MOUSE_CLICKED);
         remi.addEventListener(MouseEventType.MOUSE_MOVED);
+
+        while (true){
+            Thread.sleep(50);
+            cachealot.move();
+        }
 
     }
 
