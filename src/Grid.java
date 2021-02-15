@@ -3,6 +3,7 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Grid {
 
+    private Cell[][] cells;
     private final static int PADDING = 10;
     private final static int CELL_SIZE = 20;
     private int cols;
@@ -13,8 +14,8 @@ public class Grid {
     public Grid(int cols, int rows) {
         this.cols = cols;
         this.rows = rows;
-
-        grid = new Rectangle(PADDING, PADDING, CELL_SIZE, CELL_SIZE);
+        cells = new Cell[cols][rows];
+        grid = new Rectangle(PADDING, PADDING, cols * CELL_SIZE, rows * CELL_SIZE);
         grid.setColor(Color.BLACK);
 
     }
@@ -24,15 +25,38 @@ public class Grid {
 
     }
     public void generateCells(){
-        int padding2 = PADDING;
-
-        for (int i = 0; i < cols; i++) {
-            for (int j = 0; j < rows; j++) {
-                new Cell(padding2, PADDING + (CELL_SIZE * j), CELL_SIZE, CELL_SIZE, Color.BLACK);
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[j].length; j++) {
+                cells[i][j] = new Cell(i, j, Color.BLACK, this);
 
             }
-            padding2 += CELL_SIZE;
-
         }
+    }
+
+    public static int getPADDING() {
+        return PADDING;
+
+    }
+
+    public int rowToY(int row) {
+        return PADDING + (row * CELL_SIZE);
+
+    }
+
+    public int colsToX(int col) {
+        return PADDING + (col * CELL_SIZE);
+
+    }
+
+    public int getY() {
+        return grid.getY();
+    }
+
+    public int getX() {
+        return grid.getX();
+    }
+
+    public static int getCellSize() {
+        return CELL_SIZE;
     }
 }
