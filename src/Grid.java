@@ -1,3 +1,4 @@
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Grid {
@@ -13,5 +14,25 @@ public class Grid {
         this.cols = cols;
         this.rows = rows;
 
+        grid = new Rectangle(PADDING, PADDING, CELL_SIZE, CELL_SIZE);
+        grid.setColor(Color.BLACK);
+
+    }
+
+    public void init() {
+        grid.draw();
+
+    }
+    public void generateCells(){
+        int padding2 = PADDING;
+
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+                new Cell(padding2, PADDING + (CELL_SIZE * j), CELL_SIZE, CELL_SIZE, Color.BLACK);
+
+            }
+            padding2 += CELL_SIZE;
+
+        }
     }
 }
