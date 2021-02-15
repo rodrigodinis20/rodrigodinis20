@@ -5,5 +5,7 @@ public class Main {
         grid.init();
         grid.generateCells();
 
+        CellPainter painter = new CellPainter(grid);
+
     }
 }

@@ -56,7 +56,19 @@ public class Grid {
         return grid.getX();
     }
 
-    public static int getCellSize() {
+    public int getCellSize() {
         return CELL_SIZE;
+    }
+
+    public int getHeight() {
+        return rows-1;
+    }
+
+    public int getWidth() {
+        return cols-1;
+    }
+
+    public Cell[][] getCells() {
+        return cells;
     }
 }
