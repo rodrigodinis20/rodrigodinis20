@@ -8,12 +8,11 @@ public class Cell extends Rectangle{
     private int row;
     private boolean painted;
 
-    public Cell(int col, int row, Color color, Grid grid) {
+    public Cell(int col, int row, Grid grid) {
         super(grid.colsToX(col), grid.rowToY(row), grid.getCellSize(), grid.getCellSize());
         this.row = row;
         this.col = col;
         this.grid = grid;
-        setColor(color);
         draw();
 
     }

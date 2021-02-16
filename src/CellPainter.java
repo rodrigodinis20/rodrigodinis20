@@ -13,10 +13,10 @@ public class CellPainter extends Cell implements KeyboardHandler {
 
 
     public CellPainter(Grid grid) {
-        super(0, 0, Color.BLACK, grid);
+        super(0, 0, grid);
         this.grid = grid;
         keyboard = new Keyboard(this);
-        setColor(Color.GRAY);
+        setColor(Color.DARK_GRAY);
         fill();
 
         keyboard.addEventListener(KeyboardEvent.KEY_RIGHT, KeyboardEventType.KEY_PRESSED);

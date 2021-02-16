@@ -27,7 +27,7 @@ public class Grid {
     public void generateCells(){
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[j].length; j++) {
-                cells[i][j] = new Cell(i, j, Color.BLACK, this);
+                cells[i][j] = new Cell(i, j, this);
 
             }
         }
@@ -36,7 +36,7 @@ public class Grid {
     public void clearCells() {
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[j].length; j++) {
-                cells[i][j].delete();
+                //cells[i][j].delete();
                 cells[i][j].draw();
             }
         }
