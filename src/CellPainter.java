@@ -9,15 +9,14 @@ public class CellPainter extends Cell implements KeyboardHandler {
 
 
     private Grid grid;
-    private boolean canPaint = true;
     private Keyboard keyboard;
 
 
     public CellPainter(Grid grid) {
-        super(0, 0, Color.GREEN, grid);
+        super(0, 0, Color.BLACK, grid);
         this.grid = grid;
         keyboard = new Keyboard(this);
-        setColor(Color.GREEN);
+        setColor(Color.GRAY);
         fill();
 
         keyboard.addEventListener(KeyboardEvent.KEY_RIGHT, KeyboardEventType.KEY_PRESSED);
@@ -25,6 +24,7 @@ public class CellPainter extends Cell implements KeyboardHandler {
         keyboard.addEventListener(KeyboardEvent.KEY_DOWN, KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(KeyboardEvent.KEY_LEFT, KeyboardEventType.KEY_PRESSED);
         keyboard.addEventListener(KeyboardEvent.KEY_SPACE, KeyboardEventType.KEY_PRESSED);
+        keyboard.addEventListener(KeyboardEvent.KEY_C, KeyboardEventType.KEY_PRESSED);
 
     }
 
@@ -54,28 +54,21 @@ public class CellPainter extends Cell implements KeyboardHandler {
         if (cell.getCol() == 0) return;
         cell.getRectangle().translate(-grid.getCellSize(), 0);
         updateColLeft();
+
     }
 
     public void fillCell() {
+        Cell currentCell = grid.getCells()[getCol()][getRow()];
 
-        grid.getCells()[getCol()][getRow()].setColor(Color.GREEN);
-        if (!grid.getCells()[getCol()][getRow()].isFilled()) {
-            grid.getCells()[getCol()][getRow()].fill();
+        if (!currentCell.isFilled()) {
+            currentCell.fill();
+            currentCell.isPainted();
 
         }
-        else {grid.getCells()[getCol()][getRow()].draw();
-        grid.getCells()[getCol()][getRow()].setColor(Color.BLACK);
+        else {
+            currentCell.draw();
+            currentCell.setColor(Color.BLACK);
         }
-
-
-    }
-
-    public void setCanPaint(boolean canPaint) {
-        this.canPaint = canPaint;
-    }
-
-    public boolean isCanPaint() {
-        return canPaint;
     }
 
     @Override
@@ -96,9 +89,14 @@ public class CellPainter extends Cell implements KeyboardHandler {
                 moveRight(this);
                 break;
             case KeyboardEvent.KEY_SPACE:
+                grid.getCells()[getCol()][getRow()].setColor(Color.BLACK);
                 fillCell();
-                setCanPaint(false);
                 break;
+
+                case KeyboardEvent.KEY_C:
+                    grid.clearCells();
+                    break;
+
         }
     }
 

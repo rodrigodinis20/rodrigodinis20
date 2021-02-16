@@ -6,6 +6,7 @@ public class Cell extends Rectangle{
     private Grid grid;
     private int col;
     private int row;
+    private boolean painted;
 
     public Cell(int col, int row, Color color, Grid grid) {
         super(grid.colsToX(col), grid.rowToY(row), grid.getCellSize(), grid.getCellSize());
@@ -43,5 +44,9 @@ public class Cell extends Rectangle{
 
     public void updateColLeft() {
         col --;
+    }
+
+    public boolean isPainted() {
+        return painted;
     }
 }

@@ -16,7 +16,6 @@ public class Grid {
         this.rows = rows;
         cells = new Cell[cols][rows];
         grid = new Rectangle(PADDING, PADDING, cols * CELL_SIZE, rows * CELL_SIZE);
-        grid.setColor(Color.BLACK);
 
     }
 
@@ -24,6 +23,7 @@ public class Grid {
         grid.draw();
 
     }
+
     public void generateCells(){
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[j].length; j++) {
@@ -33,9 +33,13 @@ public class Grid {
         }
     }
 
-    public static int getPADDING() {
-        return PADDING;
-
+    public void clearCells() {
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[j].length; j++) {
+                cells[i][j].delete();
+                cells[i][j].draw();
+            }
+        }
     }
 
     public int rowToY(int row) {
@@ -46,14 +50,6 @@ public class Grid {
     public int colsToX(int col) {
         return PADDING + (col * CELL_SIZE);
 
-    }
-
-    public int getY() {
-        return grid.getY();
-    }
-
-    public int getX() {
-        return grid.getX();
     }
 
     public int getCellSize() {
