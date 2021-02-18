@@ -12,7 +12,7 @@ public class SimpleGfxGrid implements Grid {
     private int rows;
     private int cols;
     private Rectangle rectangle;
-    private int cellSize;
+    private int cellSize = 10;
 
     public SimpleGfxGrid(int cols, int rows){
 
@@ -26,11 +26,10 @@ public class SimpleGfxGrid implements Grid {
      */
     @Override
     public void init() {
-        rectangle = new Rectangle(PADDING, PADDING, cols * cellSize, rows * cellSize);
+        rectangle = new Rectangle(PADDING, PADDING, (cols * cellSize), (rows * cellSize));
         rectangle.setColor(Color.BLACK);
         rectangle.draw();
 
-        //throw new UnsupportedOperationException();
     }
 
     /**
@@ -119,8 +118,7 @@ public class SimpleGfxGrid implements Grid {
      * @return y pixel value
      */
     public int rowToY(int row) {
-
-        return getX() + (row * getCellSize());
+        return getY() + (row * getCellSize());
 
     }
 
@@ -130,8 +128,7 @@ public class SimpleGfxGrid implements Grid {
      * @return x pixel value
      */
     public int columnToX(int column) {
+        return getX() + (column * getCellSize());
 
-        return getY() + (column * getCellSize());
-        //throw new UnsupportedOperationException();
     }
 }

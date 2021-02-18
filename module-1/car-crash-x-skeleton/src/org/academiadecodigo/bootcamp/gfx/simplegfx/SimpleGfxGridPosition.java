@@ -4,6 +4,7 @@ import org.academiadecodigo.bootcamp.grid.GridColor;
 import org.academiadecodigo.bootcamp.grid.GridDirection;
 import org.academiadecodigo.bootcamp.grid.position.AbstractGridPosition;
 import org.academiadecodigo.bootcamp.grid.position.GridPosition;
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 /**
@@ -13,6 +14,7 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
 
     private Rectangle rectangle;
     private SimpleGfxGrid simpleGfxGrid;
+    private GridColor color;
 
     /**
      * Simple graphics position constructor
@@ -21,10 +23,11 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
     public SimpleGfxGridPosition(SimpleGfxGrid grid){
         super((int) (Math.random() * grid.getCols()), (int) (Math.random() * grid.getRows()), grid);
 
+        //rectangle = new Rectangle (grid.columnToX(getCol()), grid.rowToY(getRow()), grid.getCellSize(), grid.getCellSize());
         simpleGfxGrid = grid;
-        rectangle = new Rectangle (grid.columnToX(getCol()), grid.rowToY(getRow()), grid.getCols(), grid.getRows());
-        show();
-        //throw new UnsupportedOperationException();
+        //rectangle.fill();
+
+
     }
 
     /**
@@ -37,8 +40,9 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
         super(col, row, grid);
 
         simpleGfxGrid = grid;
-        rectangle = new Rectangle(grid.PADDING, grid.PADDING, grid.getCellSize(), grid.getCellSize());
+        rectangle = new Rectangle(grid.columnToX(getCol()), grid.rowToY(getRow()), grid.getCellSize(), grid.getCellSize());
         show();
+
     }
 
     /**
@@ -48,7 +52,6 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
     public void show() {
         rectangle.fill();
 
-        //throw new UnsupportedOperationException();
     }
 
     /**
@@ -58,7 +61,6 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
     public void hide() {
         rectangle.delete();
 
-        //throw new UnsupportedOperationException();
     }
 
     /**
@@ -66,7 +68,14 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
      */
     @Override
     public void moveInDirection(GridDirection direction, int distance) {
-        throw new UnsupportedOperationException();
+
+        int xInicial = simpleGfxGrid.columnToX(getCol());
+        int yInicial = simpleGfxGrid.rowToY(getRow());
+
+        super.moveInDirection(direction, distance);
+
+        rectangle.translate(simpleGfxGrid.columnToX(getCol()) - xInicial, simpleGfxGrid.rowToY(getRow()) - yInicial);
+
     }
 
     /**
@@ -74,6 +83,8 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
      */
     @Override
     public void setColor(GridColor color) {
-        throw new UnsupportedOperationException();
+        rectangle.setColor(SimpleGfxColorMapper.getColor(color));
+        super.setColor(color);
+
     }
 }
