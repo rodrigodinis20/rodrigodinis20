@@ -9,8 +9,8 @@ public class Cachealot {
     private double t = 0;
 
     private static final int WHALE_WEIGHT = 1; //100 kgV
-    private static final double GRAV_CONSTANT = -3.42; //ay = m/s^2
-    private static final double v0 = 9; //ay = m/s^2
+    private static final double GRAV_CONSTANT = -9.8; //ay = m/s^2
+    private static final double v0 = 12; //ay = m/s^2
     double lasty = 0;
     //var y = v0t + 1/2 ay * t^2
 
@@ -27,7 +27,7 @@ public class Cachealot {
             return;
         }
 
-        t += 0.3;
+        t += 0.1;
         double y = -(v0 * t + (0.5 * GRAV_CONSTANT * t * t));
 
         if (cache.getY() + y > 500) {

@@ -54,7 +54,7 @@ public class Test {
         remi.addEventListener(MouseEventType.MOUSE_MOVED);
 
         while (true){
-            Thread.sleep(50);
+            Thread.sleep(10);
             cachealot.move();
         }
 

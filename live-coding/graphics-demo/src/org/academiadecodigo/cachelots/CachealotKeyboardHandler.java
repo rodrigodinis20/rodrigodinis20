@@ -25,8 +25,6 @@ public class CachealotKeyboardHandler implements KeyboardHandler {
             case KeyboardEvent.KEY_SPACE:
                 cache.setMoving(!cache.isMoving());
                 break;
-
-
         }
     }
 
