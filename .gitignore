@@ -1,6 +1,7 @@
 *.iml
 out
 .idea
+target
 # Created by https://www.toptal.com/developers/gitignore/api/macos,windows,intellij
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,intellij
 
