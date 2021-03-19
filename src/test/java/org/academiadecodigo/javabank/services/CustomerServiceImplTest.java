@@ -1,154 +1,234 @@
 package org.academiadecodigo.javabank.services;
 
 import org.academiadecodigo.javabank.model.Customer;
+import org.academiadecodigo.javabank.model.Recipient;
 import org.academiadecodigo.javabank.model.account.Account;
+import org.academiadecodigo.javabank.model.account.CheckingAccount;
+import org.academiadecodigo.javabank.persistence.TransactionException;
+import org.academiadecodigo.javabank.persistence.TransactionManager;
+import org.academiadecodigo.javabank.persistence.dao.CustomerDao;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.List;
+import java.util.Set;
 
+import static junit.framework.TestCase.assertNotNull;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.*;
 
 public class CustomerServiceImplTest {
 
-    private CustomerService customerService;
+    private static final double DOUBLE_PRECISION = 0.1;
+
+    private TransactionManager tx;
+    private CustomerDao customerDao;
+    private CustomerServiceImpl customerService;
 
     @Before
     public void setup() {
+
+        tx = mock(TransactionManager.class);
+        customerDao = mock(CustomerDao.class);
+
         customerService = new CustomerServiceImpl();
-    }
-
-
-    @Test
-    public void testAdd() {
-
-        // check if there are no customers
-        assertEquals(0, customerService.list().size());
-
-        // add a customer
-        Customer c = new Customer();
-        customerService.add(c);
-
-        // check if it was added successfully
-        assertEquals(1, customerService.list().size());
+        customerService.setTransactionManager(tx);
+        customerService.setCustomerDao(customerDao);
 
     }
 
     @Test
     public void testGet() {
 
-        // check if customer one returns null
-        assertNull(customerService.get(1));
+        // setup
+        int fakeId = 9999;
+        Customer fakeCustomer = new Customer();
+        when(customerDao.findById(fakeId)).thenReturn(fakeCustomer);
 
-        // add a customer
-        Customer c = new Customer();
-        customerService.add(c);
+        // exercise
+        Customer customer = customerService.get(fakeId);
 
-        // check if it was added successfully
-        assertEquals(c, customerService.get(1));
-
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+        assertEquals(fakeCustomer, customer);
     }
 
-    @Test
-    public void testList() {
+    @Test(expected = TransactionException.class)
+    public void testGetFail() {
 
-        // check if there are no customers
-        assertEquals(0, customerService.list().size());
+        // setup
+        doThrow(new TransactionException(new RuntimeException())).when(customerDao).findById(anyInt());
 
-        // add a customer
-        Customer c1 = new Customer();
-        customerService.add(c1);
+        // exercise
+        customerService.get(1);
 
-        // check if it was added successfully
-        assertEquals(1, customerService.list().size());
-
-        // add a second customer
-        Customer c2 = new Customer();
-        customerService.add(c2);
-
-        // check if it was added successfully
-        assertEquals(2, customerService.list().size());
-
-        // add a third customer
-        Customer c3 = new Customer();
-        customerService.add(c3);
-
-        // create a list of customers for comparison
-        List<Customer> customers = new ArrayList<>();
-        customers.add(c1);
-        customers.add(c2);
-        customers.add(c3);
-
-        assertEquals(customers, customerService.list());
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
 
     }
 
     @Test
     public void testGetBalance() {
 
-        double a1Balance = 100;
-        double a2Balance = 550;
+        // setup
+        int fakeId = 9999;
+        Account a1 = new CheckingAccount();
+        Account a2 = new CheckingAccount();
+        a1.credit(100);
+        a2.credit(200);
+        Customer fakeCustomer = new Customer();
+        fakeCustomer.getAccounts().add(0, a1);
+        fakeCustomer.getAccounts().add(1, a2);
+        when(customerDao.findById(fakeId)).thenReturn(fakeCustomer);
 
-        // create a fake customer and add it to the service
-        Customer c = mock(Customer.class);
-        when(c.getId()).thenReturn(1);
-        customerService.add(c);
+        // exercise
+        double result = customerService.getBalance(fakeId);
 
-        // create two fake accounts
-        Account a1 = mock(Account.class);
-        Account a2 = mock(Account.class);
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+        assertEquals(a1.getBalance() + a2.getBalance(), result, DOUBLE_PRECISION);
+    }
 
-        // give them fake balances and ids
-        when(a1.getBalance()).thenReturn(a1Balance);
-        when(a1.getId()).thenReturn(1);
-        when(a2.getBalance()).thenReturn(a2Balance);
-        when(a2.getId()).thenReturn(2);
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetBalanceInvalidCustomer() {
 
-        // pretend these fake accounts are from the fake customer
-        List<Account> accounts = new LinkedList<>();
-        accounts.add(a1);
-        accounts.add(a2);
-        when(c.getAccounts()).thenReturn(accounts);
+        // setup
+        when(customerDao.findById(anyInt())).thenReturn(null);
 
-        // check customer balance after crediting accounts
-        assertEquals(a1Balance + a2Balance, customerService.getBalance(1), 0);
+        // exercise
+        customerService.getBalance(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+    }
+
+    @Test(expected = TransactionException.class)
+    public void testGetBalanceFail() {
+
+        // setup
+        doThrow(new TransactionException(new RuntimeException())).when(customerDao).findById(anyInt());
+
+        // exercise
+        customerService.getBalance(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
 
     }
 
     @Test
     public void testListCustomerAccountIds() {
 
-        int acc1Id = 10;
-        int acc2Id = 8;
+        // setup
+        int fakeId = 9999;
+        Account a1 = new CheckingAccount();
+        Account a2 = new CheckingAccount();
+        a1.credit(100);
+        a1.setId(1);
+        a2.credit(200);
+        a2.setId(2);
+        Customer fakeCustomer = new Customer();
+        fakeCustomer.getAccounts().add(a1);
+        fakeCustomer.getAccounts().add(a2);
+        when(customerDao.findById(fakeId)).thenReturn(fakeCustomer);
 
-        // create a fake customer and add it to the service
-        Customer c = mock(Customer.class);
-        when(c.getId()).thenReturn(1);
-        customerService.add(c);
+        // exercise
+        Set<Integer> accountIds = customerService.listCustomerAccountIds(fakeId);
 
-        // create two fake accounts
-        Account a1 = mock(Account.class);
-        Account a2 = mock(Account.class);
-
-        // give them fake ids
-        when(a1.getId()).thenReturn(acc1Id);
-        when(a2.getId()).thenReturn(acc2Id);
-
-        // pretend these fake accounts are from the fake customer
-        List<Account> accounts = new LinkedList<>();
-        accounts.add(a1);
-        accounts.add(a2);
-        when(c.getAccounts()).thenReturn(accounts);
-
-        // create a set of new customer's account ids
-        Set<Integer> accountIds = new HashSet<>();
-        accountIds.add(a1.getId());
-        accountIds.add(a2.getId());
-
-        assertEquals(accountIds, customerService.listCustomerAccountIds(1));
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+        assertNotNull(accountIds);
+        assertEquals(fakeCustomer.getAccounts().size(), accountIds.size());
+        assertTrue(accountIds.contains(a1.getId()));
+        assertTrue(accountIds.contains(a2.getId()));
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void testGetCustomerAccountIdsInvalidId() {
+
+        // setup
+        when(customerDao.findById(anyInt())).thenReturn(null);
+
+        // exercise
+        customerService.listCustomerAccountIds(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+
+    }
+
+    @Test(expected = TransactionException.class)
+    public void testListCustomerAccountIdsFail() {
+
+        // setup
+        doThrow(new TransactionException(new RuntimeException())).when(customerDao).findById(anyInt());
+
+        // exercise
+        customerService.listCustomerAccountIds(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+
+    }
+
+    @Test
+    public void testListRecipients() {
+
+        // setup
+        int fakeId = 9999;
+        Recipient r1 = new Recipient();
+        Recipient r2 = new Recipient();
+        Customer fakeCustomer = new Customer();
+        fakeCustomer.addRecipient(r1);
+        fakeCustomer.addRecipient(r2);
+        when(customerDao.findById(fakeId)).thenReturn(fakeCustomer);
+
+        // exercise
+        List<Recipient> recipients = customerService.listRecipients(fakeId);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+        assertNotNull(recipients);
+        assertEquals(fakeCustomer.getRecipients().size(), recipients.size());
+        assertTrue(recipients.contains(r1));
+        assertTrue(recipients.contains(r2));
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testListRecipientsInvalidId() {
+
+        // setup
+        when(customerDao.findById(anyInt())).thenReturn(null);
+
+        // exercise
+        customerService.listRecipients(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+    }
+
+    @Test(expected = TransactionException.class)
+    public void testListRecipientsFails() {
+
+        // setup
+        doThrow(new TransactionException(new RuntimeException())).when(customerDao).findById(anyInt());
+
+        // exercise
+        customerService.listRecipients(1);
+
+        // verify
+        verify(tx, times(1)).beginRead();
+        verify(tx, times(1)).commit();
+    }
 }

@@ -2,8 +2,10 @@ package org.academiadecodigo.javabank.services;
 
 import org.academiadecodigo.javabank.model.AbstractModel;
 import org.academiadecodigo.javabank.model.Customer;
-import org.academiadecodigo.javabank.model.Model;
+import org.academiadecodigo.javabank.model.Recipient;
 import org.academiadecodigo.javabank.model.account.Account;
+import org.academiadecodigo.javabank.persistence.TransactionManager;
+import org.academiadecodigo.javabank.persistence.dao.CustomerDao;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -13,15 +15,25 @@ import java.util.stream.Collectors;
  */
 public class CustomerServiceImpl implements CustomerService {
 
-    private Map<Integer, Customer> customerMap = new HashMap<>();
+    private CustomerDao customerDao;
+    private TransactionManager tx;
 
     /**
-     * Gets the next account id
+     * Sets the customer data access object
      *
-     * @return the next id
+     * @param customerDao the account DAO to set
      */
-    private Integer getNextId() {
-        return customerMap.isEmpty() ? 1 : Collections.max(customerMap.keySet()) + 1;
+    public void setCustomerDao(CustomerDao customerDao) {
+        this.customerDao = customerDao;
+    }
+
+    /**
+     * Sets the transaction manager
+     *
+     * @param tx the transaction manager to set
+     */
+    public void setTransactionManager(TransactionManager tx) {
+        this.tx = tx;
     }
 
     /**
@@ -29,15 +41,37 @@ public class CustomerServiceImpl implements CustomerService {
      */
     @Override
     public Customer get(Integer id) {
-        return customerMap.get(id);
+
+        try {
+
+            tx.beginRead();
+            return customerDao.findById(id);
+
+        } finally {
+            tx.commit();
+        }
     }
 
     /**
-     * @see CustomerService#list()
+     * @see CustomerService#getBalance(Integer)
      */
     @Override
-    public List<Customer> list() {
-        return new ArrayList<>(customerMap.values());
+    public double getBalance(Integer id) {
+
+        try {
+
+            tx.beginRead();
+
+            Customer customer = Optional.ofNullable(customerDao.findById(id))
+                    .orElseThrow(() -> new IllegalArgumentException("Customer does not exist"));
+
+            return customer.getAccounts().stream()
+                    .mapToDouble(Account::getBalance)
+                    .sum();
+
+        } finally {
+            tx.commit();
+        }
     }
 
     /**
@@ -46,36 +80,39 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public Set<Integer> listCustomerAccountIds(Integer id) {
 
-        List<Account> accountList = customerMap.get(id).getAccounts();
+        try {
 
-        return accountList.stream()
-                .map(Model::getId)
-                .collect(Collectors.toSet());
-    }
+            tx.beginRead();
 
-    /**
-     * @see CustomerService#getBalance(int)
-     */
-    @Override
-    public double getBalance(int id) {
+            Customer customer = Optional.ofNullable(customerDao.findById(id))
+                    .orElseThrow(() -> new IllegalArgumentException("Customer does not exist"));
 
-        List<Account> accounts = customerMap.get(id).getAccounts();
+            return customer.getAccounts().stream()
+                    .map(AbstractModel::getId)
+                    .collect(Collectors.toSet());
 
-        return accounts.stream()
-                .mapToDouble(Account::getBalance)
-                .sum();
-    }
-
-    /**
-     * @see CustomerService#add(Customer)
-     */
-    @Override
-    public void add(Customer customer) {
-
-        if (customer.getId() == null) {
-            customer.setId(getNextId());
+        } finally {
+            tx.commit();
         }
+    }
 
-        customerMap.put(customer.getId(), customer);
+    /**
+     * @see CustomerService#listRecipients(Integer)
+     */
+    @Override
+    public List<Recipient> listRecipients(Integer id) {
+
+        try {
+
+            tx.beginRead();
+
+            Customer customer = Optional.ofNullable(customerDao.findById(id))
+                    .orElseThrow(() -> new IllegalArgumentException("Customer does not exist"));
+
+            return new ArrayList<>(customer.getRecipients());
+
+        } finally {
+            tx.commit();
+        }
     }
 }
