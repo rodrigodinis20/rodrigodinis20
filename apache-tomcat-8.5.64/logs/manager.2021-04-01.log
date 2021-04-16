@@ -1,0 +1,2 @@
+01-Apr-2021 09:38:30.151 INFO [http-nio-8080-exec-2047] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/javabank4'
+01-Apr-2021 09:38:30.152 INFO [http-nio-8080-exec-2047] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/javabank4.war.tmp

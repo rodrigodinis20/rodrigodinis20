@@ -1,0 +1,56 @@
+25-Mar-2021 09:45:47.110 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:07:52.866 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:07:52.867 INFO [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:07:56.125 INFO [http-nio-8080-exec-10] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:08:02.448 INFO [http-nio-8080-exec-7] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:08:08.974 INFO [http-nio-8080-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:08:38.743 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:08:38.743 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:09:45.341 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:09:45.341 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:11:56.998 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:12:02.112 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:12:02.113 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:12:10.760 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 12:13:28.817 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:13:28.817 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:14:09.977 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:14:09.977 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 12:24:18.617 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 12:24:18.617 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:14:24.446 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:14:24.446 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:15:50.986 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:15:50.987 INFO [http-nio-8080-exec-63] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:20:03.652 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:20:03.652 INFO [http-nio-8080-exec-71] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:22:42.617 INFO [http-nio-8080-exec-85] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+25-Mar-2021 16:30:05.492 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:30:05.492 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:32:30.321 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello'
+25-Mar-2021 16:33:02.969 INFO [http-nio-8080-exec-97] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:33:02.969 INFO [http-nio-8080-exec-97] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 16:34:46.577 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 16:34:46.577 INFO [http-nio-8080-exec-98] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 17:01:08.488 INFO [http-nio-8080-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 17:01:08.488 INFO [http-nio-8080-exec-108] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:19:15.125 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:19:15.125 INFO [http-nio-8080-exec-127] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:20:17.405 INFO [http-nio-8080-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:20:17.405 INFO [http-nio-8080-exec-131] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:25:09.565 INFO [http-nio-8080-exec-135] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:25:09.565 INFO [http-nio-8080-exec-135] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:25:34.197 INFO [http-nio-8080-exec-137] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:25:34.197 INFO [http-nio-8080-exec-137] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:28:29.514 INFO [http-nio-8080-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:28:29.514 INFO [http-nio-8080-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:35:36.283 INFO [http-nio-8080-exec-157] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:35:36.283 INFO [http-nio-8080-exec-157] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:36:16.445 INFO [http-nio-8080-exec-158] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:36:16.446 INFO [http-nio-8080-exec-158] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:36:56.805 INFO [http-nio-8080-exec-159] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:36:56.805 INFO [http-nio-8080-exec-159] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:38:25.835 INFO [http-nio-8080-exec-172] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:38:25.835 INFO [http-nio-8080-exec-172] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp
+25-Mar-2021 18:40:14.650 INFO [http-nio-8080-exec-177] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello'
+25-Mar-2021 18:40:14.650 INFO [http-nio-8080-exec-177] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/hello.war.tmp

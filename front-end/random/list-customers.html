@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Javabank" content="width=device-width, initial-scale=1.0">
+    <title>Javabank</title>
+</head>
+<h1>Javabank</h1>
+
+<body>
+    <h3>List of customers:</h3>
+    <table id="users-table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </table>
+</body>
+<script>
+
+    $(document).ready(function)
+
+        function populate(data) {
+            data.forEach(customer => {
+                var row = usersTable.insertRow(-1);
+                row.innerHTML = "<td>" + customer.firstName + "</td><td>" +
+                customer.lastName + "</td><td>" + customer.email + "</td><td>" +
+                customer.phone + "</td>";
+            })
+        }
+        var ajax;
+        if (window.XMLHttpRequest) {
+            ajax = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            ajax = new ActiveXObject('Microsoft.XMLHTTP');
+        }
+
+
+        ajax.onreadystatechange = function () {
+            if (ajax.readyState === 4 && ajax.status === 200) {
+                populate(JSON.parse(ajax.responseText));
+            }
+        };
+
+        ajax.open('GET', 'http://localhost:8080/javabank5/api/customer', true);
+        ajax.setRequestHeader('Content-type', 'application/json');
+        ajax.send();
+    }
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+
+</html>

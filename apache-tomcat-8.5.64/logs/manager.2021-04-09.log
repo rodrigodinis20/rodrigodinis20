@@ -1,0 +1,170 @@
+09-Apr-2021 00:10:24.074 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+09-Apr-2021 00:10:24.074 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+09-Apr-2021 00:10:24.079 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:10:24.080 INFO [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war
+09-Apr-2021 00:10:51.059 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+09-Apr-2021 00:10:51.059 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+09-Apr-2021 00:10:51.067 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:15:05.112 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:15:05.112 INFO [http-nio-8080-exec-8] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:20:16.447 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:20:16.447 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:20:35.860 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:20:39.625 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:20:41.357 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:21:51.834 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/javabank5'
+09-Apr-2021 00:21:52.836 INFO [http-nio-8080-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/javabank5'
+09-Apr-2021 00:21:54.860 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/javabank5'
+09-Apr-2021 00:21:55.870 INFO [http-nio-8080-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/javabank5'
+09-Apr-2021 00:24:04.593 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:24:04.593 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:25:27.020 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/rememberthename'
+09-Apr-2021 00:25:27.899 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:30:59.618 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:30:59.618 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:33:43.665 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/rememberthename'
+09-Apr-2021 00:33:44.189 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:33:58.264 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:33:58.264 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war
+09-Apr-2021 00:36:34.855 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:36:34.855 INFO [http-nio-8080-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:37:10.750 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:37:16.341 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log HTMLManager: start: Starting web application '/rememberthename'
+09-Apr-2021 00:37:17.254 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 00:45:16.182 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:45:16.182 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:49:19.020 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:49:19.020 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:51:30.272 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:51:30.272 INFO [http-nio-8080-exec-35] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 00:53:08.965 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 00:53:08.965 INFO [http-nio-8080-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:14:52.758 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:14:52.760 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:18:14.440 INFO [http-nio-8080-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:18:14.440 INFO [http-nio-8080-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:18:32.610 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:18:32.610 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:20:25.917 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:20:25.917 INFO [http-nio-8080-exec-50] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:20:50.971 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:20:50.971 INFO [http-nio-8080-exec-44] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:24:23.903 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:24:23.903 INFO [http-nio-8080-exec-58] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:41:10.214 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:41:10.215 INFO [http-nio-8080-exec-60] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 01:59:23.356 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 01:59:23.358 INFO [http-nio-8080-exec-68] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:15:13.235 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:15:13.239 INFO [http-nio-8080-exec-80] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:15:50.161 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:15:50.162 INFO [http-nio-8080-exec-87] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:16:23.936 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:16:23.936 INFO [http-nio-8080-exec-82] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:17:03.566 INFO [http-nio-8080-exec-79] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 02:17:08.561 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/javabank5'
+09-Apr-2021 02:17:09.106 INFO [http-nio-8080-exec-92] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 02:17:10.935 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/javabank4'
+09-Apr-2021 02:17:11.473 INFO [http-nio-8080-exec-86] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 02:17:12.814 INFO [http-nio-8080-exec-90] org.apache.catalina.core.ApplicationContext.log HTMLManager: undeploy: Undeploying web application at '/javabank2'
+09-Apr-2021 02:17:13.348 INFO [http-nio-8080-exec-90] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+09-Apr-2021 02:17:40.080 INFO [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:17:40.080 INFO [http-nio-8080-exec-78] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:21:21.516 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:21:21.517 INFO [http-nio-8080-exec-103] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:22:26.740 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:22:26.740 INFO [http-nio-8080-exec-113] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:23:34.651 INFO [http-nio-8080-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:23:34.651 INFO [http-nio-8080-exec-121] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:25:10.783 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:25:10.784 INFO [http-nio-8080-exec-132] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:45:40.639 INFO [http-nio-8080-exec-139] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:45:40.639 INFO [http-nio-8080-exec-139] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:47:41.703 INFO [http-nio-8080-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:47:41.703 INFO [http-nio-8080-exec-148] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:50:25.561 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:50:25.561 INFO [http-nio-8080-exec-156] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:53:26.713 INFO [http-nio-8080-exec-162] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:53:26.713 INFO [http-nio-8080-exec-162] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 02:59:44.347 INFO [http-nio-8080-exec-170] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 02:59:44.347 INFO [http-nio-8080-exec-170] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:02:39.587 INFO [http-nio-8080-exec-180] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:02:39.587 INFO [http-nio-8080-exec-180] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:04:11.679 INFO [http-nio-8080-exec-187] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:04:11.679 INFO [http-nio-8080-exec-187] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:04:39.019 INFO [http-nio-8080-exec-189] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:04:39.019 INFO [http-nio-8080-exec-189] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:06:36.750 INFO [http-nio-8080-exec-194] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:06:36.751 INFO [http-nio-8080-exec-194] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:08:06.422 INFO [http-nio-8080-exec-202] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:08:06.422 INFO [http-nio-8080-exec-202] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:09:45.534 INFO [http-nio-8080-exec-205] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:09:45.534 INFO [http-nio-8080-exec-205] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:16:40.154 INFO [http-nio-8080-exec-208] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:16:40.154 INFO [http-nio-8080-exec-208] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:18:40.700 INFO [http-nio-8080-exec-218] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:18:40.700 INFO [http-nio-8080-exec-218] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:19:16.707 INFO [http-nio-8080-exec-212] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:19:16.707 INFO [http-nio-8080-exec-212] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:21:12.736 INFO [http-nio-8080-exec-230] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:21:12.736 INFO [http-nio-8080-exec-230] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:24:12.719 INFO [http-nio-8080-exec-236] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:24:12.723 INFO [http-nio-8080-exec-236] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:25:01.864 INFO [http-nio-8080-exec-234] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:25:01.864 INFO [http-nio-8080-exec-234] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:25:52.883 INFO [http-nio-8080-exec-239] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:25:52.883 INFO [http-nio-8080-exec-239] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:30:24.200 INFO [http-nio-8080-exec-251] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:30:24.200 INFO [http-nio-8080-exec-251] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:30:51.787 INFO [http-nio-8080-exec-257] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:30:51.787 INFO [http-nio-8080-exec-257] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:38:40.758 INFO [http-nio-8080-exec-267] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:38:40.759 INFO [http-nio-8080-exec-267] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:39:41.889 INFO [http-nio-8080-exec-270] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:39:41.889 INFO [http-nio-8080-exec-270] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:40:04.834 INFO [http-nio-8080-exec-264] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:40:04.834 INFO [http-nio-8080-exec-264] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 03:50:34.139 INFO [http-nio-8080-exec-276] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 03:50:34.140 INFO [http-nio-8080-exec-276] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:05:21.567 INFO [http-nio-8080-exec-286] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:05:21.567 INFO [http-nio-8080-exec-286] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:06:10.966 INFO [http-nio-8080-exec-295] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:06:10.966 INFO [http-nio-8080-exec-295] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:07:54.388 INFO [http-nio-8080-exec-302] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:07:54.388 INFO [http-nio-8080-exec-302] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:08:47.798 INFO [http-nio-8080-exec-303] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:08:47.798 INFO [http-nio-8080-exec-303] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:10:29.242 INFO [http-nio-8080-exec-311] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:10:29.242 INFO [http-nio-8080-exec-311] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:11:59.549 INFO [http-nio-8080-exec-316] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:11:59.549 INFO [http-nio-8080-exec-316] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:15:27.257 INFO [http-nio-8080-exec-323] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:15:27.257 INFO [http-nio-8080-exec-323] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 04:22:30.033 INFO [http-nio-8080-exec-332] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 04:22:30.033 INFO [http-nio-8080-exec-332] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:14:53.836 INFO [http-nio-8080-exec-341] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:14:53.837 INFO [http-nio-8080-exec-341] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:25:45.012 INFO [http-nio-8080-exec-354] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:25:45.013 INFO [http-nio-8080-exec-354] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:27:35.395 INFO [http-nio-8080-exec-361] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:27:35.395 INFO [http-nio-8080-exec-361] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:29:47.734 INFO [http-nio-8080-exec-369] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:29:47.734 INFO [http-nio-8080-exec-369] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:31:09.338 INFO [http-nio-8080-exec-377] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:31:09.339 INFO [http-nio-8080-exec-377] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:34:03.667 INFO [http-nio-8080-exec-384] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:34:03.667 INFO [http-nio-8080-exec-384] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 06:36:08.993 INFO [http-nio-8080-exec-395] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 06:36:08.993 INFO [http-nio-8080-exec-395] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 07:35:15.924 INFO [http-nio-8080-exec-406] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 07:35:15.924 INFO [http-nio-8080-exec-406] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 07:45:32.185 INFO [http-nio-8080-exec-414] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 07:45:32.185 INFO [http-nio-8080-exec-414] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 08:02:55.011 INFO [http-nio-8080-exec-425] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 08:02:55.011 INFO [http-nio-8080-exec-425] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 08:03:51.055 INFO [http-nio-8080-exec-424] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 08:03:51.055 INFO [http-nio-8080-exec-424] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 10:02:47.809 INFO [http-nio-8080-exec-438] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 10:02:47.809 INFO [http-nio-8080-exec-438] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp
+09-Apr-2021 10:04:00.003 INFO [http-nio-8080-exec-444] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/rememberthename'
+09-Apr-2021 10:04:00.003 INFO [http-nio-8080-exec-444] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/rememberthename.war.tmp

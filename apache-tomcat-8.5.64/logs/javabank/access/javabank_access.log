@@ -1,0 +1,18 @@
+2021-04-09 00:19:12,068 [http-nio-8080-exec-12] - INFO - org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-04-09 00:19:12,205 [http-nio-8080-exec-12] - INFO - org.hibernate.Version - HHH000412: Hibernate Core {5.3.6.Final}
+2021-04-09 00:19:12,207 [http-nio-8080-exec-12] - INFO - org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2021-04-09 00:19:12,457 [http-nio-8080-exec-12] - INFO - org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-04-09 00:19:12,874 [http-nio-8080-exec-12] - INFO - org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-09 00:19:13,271 [http-nio-8080-exec-12] - INFO - org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.2.Final
+2021-04-09 00:19:14,145 [http-nio-8080-exec-12] - INFO - org.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'ScriptSourceInputFromUrl(file:/Users/codecadet/workspace/apache-tomcat-8.5.64/webapps/javabank4/WEB-INF/classes/db/test-data.sql)'
+2021-04-09 00:19:15,024 [http-nio-8080-exec-13] - INFO - org.academiadecodigo.javabank.controller.MainController - GET /
+2021-04-09 00:19:15,024 [http-nio-8080-exec-14] - INFO - org.academiadecodigo.javabank.controller.MainController - GET /
+2021-04-09 00:19:15,024 [http-nio-8080-exec-20] - INFO - org.academiadecodigo.javabank.controller.MainController - GET /
+2021-04-09 00:19:15,024 [http-nio-8080-exec-12] - INFO - org.academiadecodigo.javabank.controller.MainController - GET /
+2021-04-09 00:19:15,044 [http-nio-8080-exec-15] - INFO - org.academiadecodigo.javabank.controller.CustomerController - GET /customer/list
+2021-04-09 00:19:15,165 [http-nio-8080-exec-15] - INFO -2021-04-09 00:19:15,234 [http-nio-8080-exec-17] - INFO - org.academiadecodigo.javabank.controller.web.Mai2021-04-09 00:20:26,667 [http-nio-8080-exec-13] - INFO - org.academiadecodigo.javabank.controller.MainController - GET /
+2021-04-09 00:20:26,676 [http-nio-8080-exec-12] - INFO - org.academiadecodigo.javabank.controller.CustomerController - GET /customer/list
+2021-04-09 00:20:30,078 [http-nio-8080-exec-17] - INFO - org.academiadecodigo.javabank.controller.CustomerController - GET /customer/list
+2021-04-09 00:54:35,113 [http-nio-8080-exec-33] - INFO - org.academiadecodigo.javabank.restcontroller.RestCustomerController - GET /api/customer/2
